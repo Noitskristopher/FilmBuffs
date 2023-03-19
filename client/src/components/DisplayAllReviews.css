@@ -1,0 +1,26 @@
+.review{
+    background-color: #d5d5d5;
+    -webkit-box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.75);
+    border-radius: 25px;
+    box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.75);}
+
+    .bg-img {
+        background-image: url('../images/movie-background-collage.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: repeat;
+        height: 100vh;
+    }
+
+    .bg-c {
+        background: rgba(3,20,58,1);
+    background: -moz-linear-gradient(left, rgba(3,20,58,1) 0%, rgba(94,112,156,1) 24%, rgba(42,93,141,1) 51%, rgba(3,20,58,1) 64%, rgba(83,127,157,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(3,20,58,1)), color-stop(24%, rgba(94,112,156,1)), color-stop(51%, rgba(42,93,141,1)), color-stop(64%, rgba(3,20,58,1)), color-stop(100%, rgba(83,127,157,1)));
+    background: -webkit-linear-gradient(left, rgba(3,20,58,1) 0%, rgba(94,112,156,1) 24%, rgba(42,93,141,1) 51%, rgba(3,20,58,1) 64%, rgba(83,127,157,1) 100%);
+    background: -o-linear-gradient(left, rgba(3,20,58,1) 0%, rgba(94,112,156,1) 24%, rgba(42,93,141,1) 51%, rgba(3,20,58,1) 64%, rgba(83,127,157,1) 100%);
+    background: -ms-linear-gradient(left, rgba(3,20,58,1) 0%, rgba(94,112,156,1) 24%, rgba(42,93,141,1) 51%, rgba(3,20,58,1) 64%, rgba(83,127,157,1) 100%);
+    background: linear-gradient(to right, rgba(3,20,58,1) 0%, rgba(94,112,156,1) 24%, rgba(42,93,141,1) 51%, rgba(3,20,58,1) 64%, rgba(83,127,157,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#03143a', endColorstr='#537f9d', GradientType=1 );
+    
+    }
