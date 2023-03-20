@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import axios from 'axios';
 import './DisplayAllReviews.css'
+import NavTwo from './NavTwo';
 
 
 const DisplayOne = (props) => {
@@ -39,17 +40,7 @@ const DisplayOne = (props) => {
     return (
         <>
             <div className='p-3'>
-                <div className='d-flex justify-content-evenly align-items-center p-3 border rounded bg-c'>
-                    <Link to={'/home'} className='text-decoration-none text-white'><h1>FilmBuffs</h1></Link>
-                    <div className='input-group w-50'>
-                    </div>
-                    <div className='d-flex justify-content-space-evenly align-items-center'>
-                        <Link to={'/home'} className='mx-3 text-decoration-none text-white'>Home</Link>
-                        <Link to={'/allReviews'} className='mx-3 text-decoration-none text-white'>Reviews</Link>
-                        <Link to={'/myReviews'} className='mx-3 text-decoration-none text-white'>My Reviews</Link>
-                        <button onClick={logout} className='btn btn-primary'>Logout</button>
-                    </div>
-                </div>
+                <NavTwo logout={logout} />
                 <div className='d-flex justify-content-between align-items-center py-4'>
                     <div className='w-50'>
                         <img style={{ width: '425px' }} src={`https://image.tmdb.org/t/p/w500${oneMovie.poster_path}`} alt={oneMovie.title} />

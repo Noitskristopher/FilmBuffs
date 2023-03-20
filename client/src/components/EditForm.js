@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { useNavigate, useParams, Link } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import axios from 'axios';
-import './DisplayAllReviews.css'
+import './DisplayAllReviews.css';
+import NavTwo from './NavTwo';
 
 
 const EditForm = (props) => {
@@ -48,17 +49,7 @@ const EditForm = (props) => {
 
     return (
         <div className='p-3'>
-            <div className='d-flex justify-content-evenly align-items-center p-3 border rounded bg-c'>
-                <Link to={'/home'} className='text-decoration-none text-white'><h1>FilmBuffs</h1></Link>
-                <div className='input-group w-50'>
-                </div>
-                <div className='d-flex justify-content-evenly align-items-center'>
-                    <Link to={'/home'} className='mx-3 text-decoration-none text-white'>Home</Link>
-                    <Link to={'/allReviews'} className='mx-3 text-decoration-none text-white'>Reviews</Link>
-                    <Link to={'/myReviews'} className='mx-3 text-decoration-none text-white'>My Reviews</Link>
-                    <button onClick={logout} className='btn btn-primary'>Logout</button>
-                </div>
-            </div>
+            <NavTwo logout={logout} />
             <div className='py-4'>
                 <form onSubmit={editHandler} className='w-50 mx-auto'>
                     <h4>Edit Your Review</h4>

@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import { useParams, useNavigate, Link } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import './DisplayAllReviews.css'
+import NavTwo from './NavTwo';
 
 
 const ReviewForm = (props) => {
@@ -52,17 +53,7 @@ const ReviewForm = (props) => {
 
     return (
         <div className='p-3'>
-            <div className='d-flex justify-content-evenly align-items-center p-3 border rounded bg-c'>
-                <Link to={'/home'} className='text-decoration-none text-white'><h1>FilmBuffs</h1></Link>
-                <div className='input-group w-50'>
-                </div>
-                <div className='d-flex justify-content-evenly align-items-center'>
-                    <Link to={'/home'} className='mx-3 text-decoration-none text-white'>Home</Link>
-                    <Link to={'/allReviews'} className='mx-3 text-decoration-none text-white'>Reviews</Link>
-                    <Link to={'/myReviews'} className='mx-3 text-decoration-none text-white'>My Reviews</Link>
-                    <button onClick={logout} className='btn btn-primary'>Logout</button>
-                </div>
-            </div>
+            <NavTwo logout={logout} />
             <div className='d-flex justify-content-between align-items-center py-4'>
                 <div className='w-50'>
                     <img style={{ width: '425px' }} src={`https://image.tmdb.org/t/p/w500${reviewOneMovie.poster_path}`} alt={reviewOneMovie.title} />

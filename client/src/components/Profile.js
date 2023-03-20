@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Link, useNavigate } from 'react-router-dom';
+import NavTwo from './NavTwo';
 import './DisplayAllReviews.css';
 
 const DisplayAllByLoggedUser = (props) => {
@@ -34,17 +35,7 @@ const DisplayAllByLoggedUser = (props) => {
     }
     return (
         <div className='p-3'>
-            <div className='d-flex justify-content-evenly align-items-center p-3 border rounded bg-c'>
-                <Link to={'/home'} className='text-decoration-none text-white'><h1>FilmBuffs</h1></Link>
-                <div className='input-group w-50'>
-                </div>
-                <div className='d-flex justify-content-evenly align-items-center'>
-                    <Link to={'/home'} className='mx-3 text-decoration-none text-white'>Home</Link>
-                    <Link to={'/allReviews'} className='mx-3 text-decoration-none text-white'>Reviews</Link>
-                    <Link to={'/myReviews'} className='mx-3 text-decoration-none text-white'>My Reviews</Link>
-                    <button onClick={logout} className='btn btn-primary'>Logout</button>
-                </div>
-            </div>
+            <NavTwo logout={logout} />
             <div className='pt-3'>
                 <h3 className='text-dark fw-bold'>MY REVIEWS: </h3>
                 <div className='d-flex flex-wrap justify-content-around' >

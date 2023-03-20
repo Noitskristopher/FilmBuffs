@@ -15,8 +15,8 @@ background: -o-linear-gradient(left, rgba(3,20,58,1) 0%, rgba(94,112,156,1) 24%,
 background: -ms-linear-gradient(left, rgba(3,20,58,1) 0%, rgba(94,112,156,1) 24%, rgba(42,93,141,1) 51%, rgba(3,20,58,1) 64%, rgba(83,127,157,1) 100%);
 background: linear-gradient(to right, rgba(3,20,58,1) 0%, rgba(94,112,156,1) 24%, rgba(42,93,141,1) 51%, rgba(3,20,58,1) 64%, rgba(83,127,157,1) 100%);
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#03143a', endColorstr='#537f9d', GradientType=1 );
-
 }
+
 .user-form {
     background-color: white;
     padding: 20px;

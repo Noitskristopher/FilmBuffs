@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './logregform.css';
+import film from '../images/movie.png'
 
 
 const Nav = (props) => {
@@ -8,8 +9,8 @@ const Nav = (props) => {
     // const uuid = window.localStorage.getItem('uuid')
 
     return (
-        <div className='d-flex justify-content-evenly align-items-center p-4 border rounded bg-c'>
-            <Link className='text-decoration-none align-items-center text-white text-bold' to={'/home'}><h1>FilmBuffs</h1></Link>
+        <div className='d-flex justify-content-evenly align-items-center p-3 border rounded bg-c'>
+            <Link className='text-decoration-none align-items-center text-white text-bold' to={'/home'}><h1>FilmBuffs<img className='mb-2' style={{ width: '45px' }} src={film} alt='' /></h1></Link>
             <form onSubmit={submitHandler} className='input-group w-50'>
                 <input type='search' name="search" className='form-control' value={searchInput} onChange={(e) => setSearchInput(e.target.value)} />
                 <button className='btn btn-primary'>Search</button>

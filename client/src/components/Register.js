@@ -26,7 +26,6 @@ const Register = (props) => {
                 navigate('/home')
             })
             .catch((err) => {
-                // console.log(err.response.data.error.errors)
                 setErrors(err.response.data.error.errors)
             })
     }
@@ -76,12 +75,12 @@ const Register = (props) => {
                         <input type="password" className="form-control" placeholder="Password" name='password' value={userReg.password} onChange={onChangeHandler} />
                         <label >Password</label>
                     </div>
-                    {
-                        errors.confirmPassword ?
-                            <p className='text-danger'>{errors.confirmPassword.message}</p> :
-                            null
-                    }
                     <div className="form-floating mb-2">
+                        {
+                            errors.confirmPassword ?
+                                <p className='text-danger'>{errors.confirmPassword.message}</p> :
+                                null
+                        }
                         <input type="password" className="form-control" placeholder="Confirm Password" name='confirmPassword' value={userReg.confirmPassword} onChange={onChangeHandler} />
                         <label>Confirm Password</label>
                     </div>
